@@ -1,4 +1,5 @@
-# book-recorder
+# Books recorder app with GraphQL, Hasura and Apollo Vue
+    - More details coming soon 
 
 ## Project setup
 ```
