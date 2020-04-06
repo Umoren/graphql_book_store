@@ -1,7 +1,7 @@
 <template>
-  <div class="home">
-    <h1> HomePage works</h1>
-    
+  <div class="home ">
+
+
     <AllBooks />
      
   </div>

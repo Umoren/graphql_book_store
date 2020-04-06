@@ -2,13 +2,19 @@
   <div class="bg-dark app">
     <section class="row overlay">
       <div class="container-fluid">
-        <div class="header text-center">
+        <div class="header text-center mb-3">
           <h2 class="text-uppercase"> My Books Store </h2>
           <h4> Record of all the books i've read</h4>
         </div>
 
+      
+            
+        <transition name="movieUp">
+              <router-view />
+          </transition>         
         <div >
-          <Home />
+          
+          
         </div>
       </div>
     </section>
@@ -17,14 +23,16 @@
 
 <script>
 import Home from '../pages/Home.vue';
+import AddBooks from '../pages/AddBooks';
 export default {
   components: {
-    Home
+    Home,
+    AddBooks
   }
 }
 </script>
 
-<style scoped>
+<style >
    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,400&display=swap');
 
 
@@ -32,7 +40,7 @@ export default {
       font-family: 'Nunito Sans', sans-serif;
       
       background: #121212;
-      
+      min-height: 100vh;
       overflow-x: hidden;
       margin: 0 auto;
       padding: 0 auto;

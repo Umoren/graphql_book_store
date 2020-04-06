@@ -1,7 +1,7 @@
 <template name="addbooks">
     <div class="form_input mx-auto col-md-6">
         <form class="form-group" @submit.prevent>
-            <div>
+            <div class="mb-3">
                 <label for="title"> Book Title</label>
                 <input 
                     type="text" 
@@ -11,27 +11,16 @@
                 />
             </div>
        
-            <!-- <div class="text-left">
-               <label> Have you completed this book? </label>
-               <el-select v-model="newStatus" placeholder="Select">
-                    <el-option
-                    v-for="(status, key) in data.insert_books.returning"
-                    :key="key"
-                    :label="status.title"
-                    :value="status.id">
-                    </el-option>
-                </el-select> 
-            </div> -->
             <div>
                 <label for="description"> Book Description</label>
-                <textarea    type="text" 
+                <textarea    type="text"
                           class="form-control"
                           placeholder="Book description"
                           v-model="newDesc" />
                
             </div>
 
-            <button class="btn btn-primary mt-2" @click="addBook"  > Apply</button>
+            <button class="btn btn-primary mt-2" @click="addBook"  > Add Book</button>
         </form>
     </div>
 </template>
@@ -101,3 +90,17 @@
         }
     }
 </script>
+
+<style scoped>
+    .form-group{
+    
+      margin: 10px;
+      background: rgb(35, 35, 35);
+      
+      padding: 1em;
+      border-radius: 10px;
+      color: rgba(248, 248, 248, 0.8);
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    }
+</style>
